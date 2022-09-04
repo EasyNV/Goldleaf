@@ -18,6 +18,7 @@ jobs:
         
     - name: Build Goldleaf
       run: |
+        whoami
         sudo apt-get install -y fakeroot
         make initial -j$(nproc)
         
